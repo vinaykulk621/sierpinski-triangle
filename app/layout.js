@@ -1,4 +1,5 @@
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: "sierpinski-triangle",
@@ -8,7 +9,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="m-0 overflow-hidden">{children}</body>
+      <body className="m-0 overflow-hidden">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
