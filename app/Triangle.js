@@ -51,9 +51,6 @@ const Triangle = () => {
     // Define scale factor
     const scale = 0.5;
 
-    // colors
-    const starColors = ["#ffffff"];
-
     // Define function to render point
     const renderPoint = function (point) {
       const geometry = new THREE.SphereGeometry(1, 10, 10);
